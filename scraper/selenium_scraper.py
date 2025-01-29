@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from ..db.mongo_client import collection
 from ..config.settings import restaurant_urls
 from bs4 import BeautifulSoup
+from ..db.mongo_client import save_to_mongodb
 
 def scrape_with_selenium(url):
     chrome_options = Options()
